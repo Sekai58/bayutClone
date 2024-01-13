@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = { value: true };
+const initialState = { value: "" };
 const topDropDownSlice = createSlice({
   name: "topDropDown",
   initialState,
@@ -8,14 +8,18 @@ const topDropDownSlice = createSlice({
     getDropState: (state) => {
       state.value = state.value;
     },
-    dropToggle: (state) => {
-      state.value = !state.value;
+    dropToggle: (state, action) => {
+      if (state.value == action.payload) {
+        state.value = "";
+      } else {
+        state.value = action.payload;
+      }
     },
     dropChange: (state, action) => {
       state.value = action.payload;
     },
     dropClose: (state) => {
-      state.value = false;
+      state.value = "";
     },
   },
 });

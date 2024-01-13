@@ -68,6 +68,7 @@ const LoginModel: React.FC = () => {
               </span>
               Continue with Google
             </button>
+            <p className="w-full text-center text-md font-semibold mb-3">OR</p>
             <form className="flex flex-col gap-4 w-full h-full bg-transparent ">
               <div>
                 <input

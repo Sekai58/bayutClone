@@ -19,9 +19,9 @@ const Navbar = () => {
 
         {/* BOTTOM SECTION */}
         <section className="flex justify-between items-center py-5 px-28">
-          <div>
+          <Link to="/">
             <img src="/logo.png" className="w-[7rem]" />
-          </div>
+          </Link>
 
           <div className="flex gap-4 items-center">
             <Link to="/" className="w-[5rem]">

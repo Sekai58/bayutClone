@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/bg.jpg')",
+        "footer-section": "url('/footer.png')",
       },
     },
   },

@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 
 import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 const Home = lazy(() => import("./pages/Home"));
 const Companies = lazy(() => import("./pages/Companies"));
 const Property = lazy(() => import("./pages/Property"));
@@ -59,6 +60,7 @@ function App() {
             }
           ></Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

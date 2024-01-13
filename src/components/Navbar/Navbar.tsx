@@ -36,9 +36,9 @@ const Navbar = () => {
               <span onClick={() => dispatch(dropToggle("guides"))}>
                 Guides{drop == "guides" ? <>&#11205;</> : <>&#11206;</>}
               </span>
-              <p className="absolute top-[140%] right-0 w-[9rem]">
+              <div className="absolute top-[140%] right-0 w-[9rem]">
                 <Dropdown list={guideList} dropTitle="guides" />
-              </p>
+              </div>
             </Link>
 
             <Link to="/" className="relative">
@@ -46,9 +46,9 @@ const Navbar = () => {
                 Marketing Intelligence{" "}
                 {drop == "market" ? <>&#11205;</> : <>&#11206;</>}
               </span>
-              <p className="absolute top-[140%] right-0 w-[9rem]">
+              <div className="absolute top-[140%] right-0 w-[9rem]">
                 <Dropdown list={marketList} dropTitle="market" />
-              </p>
+              </div>
             </Link>
 
             <Link to="/">Agent Portal</Link>
@@ -57,9 +57,9 @@ const Navbar = () => {
               <span onClick={() => dispatch(dropToggle("events"))}>
                 Events {drop == "events" ? <>&#11205;</> : <>&#11206;</>}
               </span>
-              <p className="absolute top-[140%] right-0 w-[11rem]">
+              <div className="absolute top-[140%] right-0 w-[11rem]">
                 <Dropdown list={eventList} dropTitle="events" />
-              </p>
+              </div>
             </Link>
           </div>
         </section>

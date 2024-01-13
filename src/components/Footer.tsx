@@ -19,7 +19,7 @@ const Footer = () => {
     <>
       <section className="w-full px-28 flex flex-col gap-4 bg-footer-section bg-contain py-8 justify-center">
         <div className="flex justify-between">
-          <p className="uppercase text-white text-sm font-medium">
+          <div className="uppercase text-white text-sm font-medium">
             <ul className="flex gap-2 flex-wrap">
               <li className="hover:underline block">
                 <Link to="#">
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Link to="#">Terms & privacy policy</Link>
               </li>
             </ul>
-          </p>
+          </div>
 
           <div className="flex flex-wrap gap-2 items-center">
             <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-blue-500 text-xl rounded-full p-[6px]">
@@ -55,7 +55,7 @@ const Footer = () => {
             <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-red-500 text-xl rounded-full p-[6px]">
               <AiFillInstagram />
             </p>
-            <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-red-500 text-xl  text-xl rounded-full p-[6px]">
+            <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-red-500 text-xl rounded-full p-[6px]">
               <GrYoutube />
             </p>
             <img src="/appStore.png" className="h-8 rounded-md" />

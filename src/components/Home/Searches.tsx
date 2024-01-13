@@ -106,7 +106,7 @@ const Searches = () => {
       <div className={`flex items-center mb-8`}>
         <div className={`h-[1px] bg-[#b8b8b8] flex-grow`}></div>
         <span
-          className={`mx-2 font-semibold text-sm text-blue-900 overflow-visible cursor-pointer`}
+          className={`mx-2 font-semibold text-sm text-gray-800 overflow-visible cursor-pointer`}
           onClick={() => setApart(!apart)}
         >
           {apart ? <>View all &#11206;</> : <>View less &#11205;</>}
@@ -166,7 +166,7 @@ const Searches = () => {
       <div className={`flex items-center mb-8`}>
         <div className={`h-[1px] bg-[#b8b8b8] flex-grow`}></div>
         <span
-          className={`mx-2 font-semibold text-sm text-blue-900 overflow-visible cursor-pointer`}
+          className={`mx-2 font-semibold text-sm text-gray-800 overflow-visible cursor-pointer`}
           onClick={() => setVilla(!villa)}
         >
           {villa ? <>View all &#11206;</> : <>View less &#11205;</>}

@@ -1,6 +1,6 @@
 export const topImages = [
   {
-    title: "TruValue",
+    title: "TruValue™",
     content: "Get instant evaluation of your property",
     image: "/truValue.png",
   },

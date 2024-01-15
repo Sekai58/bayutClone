@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { bottomImages, topImages } from "../../assets/data/homeImage";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ImageSection = () => {
   var settings = {

@@ -14,52 +14,54 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Suspense>
-                <Home />
-              </Suspense>
-            }
-          ></Route>
+        <main className="min-h-[93vh]">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Suspense>
+                  <Home />
+                </Suspense>
+              }
+            ></Route>
 
-          <Route
-            path="/companies"
-            element={
-              <Suspense>
-                <Companies />
-              </Suspense>
-            }
-          ></Route>
+            <Route
+              path="/companies"
+              element={
+                <Suspense>
+                  <Companies />
+                </Suspense>
+              }
+            ></Route>
 
-          <Route
-            path="/property"
-            element={
-              <Suspense>
-                <Property />
-              </Suspense>
-            }
-          ></Route>
+            <Route
+              path="/property"
+              element={
+                <Suspense>
+                  <Property />
+                </Suspense>
+              }
+            ></Route>
 
-          <Route
-            path="/property-details/:id"
-            element={
-              <Suspense>
-                <PropertyDetails />
-              </Suspense>
-            }
-          ></Route>
+            <Route
+              path="/property-details/:id"
+              element={
+                <Suspense>
+                  <PropertyDetails />
+                </Suspense>
+              }
+            ></Route>
 
-          <Route
-            path="*"
-            element={
-              <Suspense>
-                <NotFound />
-              </Suspense>
-            }
-          ></Route>
-        </Routes>
+            <Route
+              path="*"
+              element={
+                <Suspense>
+                  <NotFound />
+                </Suspense>
+              }
+            ></Route>
+          </Routes>
+        </main>
         <Footer />
       </BrowserRouter>
     </>

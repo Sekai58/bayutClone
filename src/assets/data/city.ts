@@ -7,37 +7,37 @@ import img6 from "../images/cities/img6.png";
 import img7 from "../images/cities/img7.png";
 import img8 from "../images/cities/img8.png";
 
-export const city = [
+export const cities = [
   {
     title: "Dubai",
-    image: { img1 },
+    image: img1,
   },
   {
     title: "Abu Dhabi",
-    image: { img2 },
+    image: img2,
   },
   {
     title: "Sharjan",
-    image: { img3 },
+    image: img3,
   },
   {
     title: "Ajman",
-    image: { img4 },
+    image: img4,
   },
   {
     title: "Ras AI Khaimah",
-    image: { img5 },
+    image: img5,
   },
   {
     title: "Umm AI Quwain",
-    image: { img6 },
+    image: img6,
   },
   {
     title: "AI Ain",
-    image: { img7 },
+    image: img7,
   },
   {
     title: "Fujairah",
-    image: { img8 },
+    image: img8,
   },
 ];

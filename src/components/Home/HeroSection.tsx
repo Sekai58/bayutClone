@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaRegPlayCircle } from "react-icons/fa";
 import { useState } from "react";
 import Select from "react-select";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const [options, setOptions] = useState("property");
+  const handleSubmit = () => {
+    navigate("/property");
+  };
   return (
     <section className="h-[80vh] bg-cover mx-5 bg-hero-pattern rounded-lg flex flex-col justify-center items-center gap-7">
       <header className="text-white">
@@ -47,7 +51,10 @@ const HeroSection = () => {
         </button>
       </div>
 
-      <form className="p-3 bg-[#232323] bg-opacity-90 rounded-md flex flex-col gap-1 w-[40rem]">
+      <form
+        onSubmit={handleSubmit}
+        className="p-3 bg-[#232323] bg-opacity-90 rounded-md flex flex-col gap-1 w-[40rem]"
+      >
         <div className="flex justify-around gap-2 my-1">
           <Select className="flex-[0.6]" placeholder="Rent" isDisabled></Select>
           <input

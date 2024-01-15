@@ -5,6 +5,7 @@ import { featAgencies } from "../assets/data/featuredAgencies";
 import Agencies from "../components/Cards/Agencies";
 import { Link } from "react-router-dom";
 import City from "../components/Cards/City";
+import { cities } from "../assets/data/city";
 
 const Companies = () => {
   var settings = {
@@ -80,10 +81,10 @@ const Companies = () => {
             <p>See only agencies that work in a specific city or area</p>
           </header>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 py-5">
-            {featAgencies.map((city, idx) => {
+            {cities.map((city, idx) => {
               return (
                 <div key={idx}>
-                  <City title={city.content} image={city.image} />
+                  <City title={city.title} image={city.image} />
                 </div>
               );
             })}

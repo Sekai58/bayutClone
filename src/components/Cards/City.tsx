@@ -1,6 +1,6 @@
 interface ICity {
   title: string;
-  image: string;
+  image: any;
 }
 const City: React.FC<ICity> = (props: ICity) => {
   return (

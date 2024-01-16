@@ -4,7 +4,7 @@ interface IList {
 }
 const RecommendProperty: React.FC<IList> = ({ title, list }) => {
   return (
-    <div className="w-full py-8">
+    <div className="w-full pt-6">
       <p className="w-full font-medium py-1 px-3 bg-[#f5f5f5] rounded-md">
         {title}
       </p>

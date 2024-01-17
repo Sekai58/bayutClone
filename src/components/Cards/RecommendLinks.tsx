@@ -2,7 +2,7 @@ interface IList {
   title: string;
   list: string[];
 }
-const RecommendProperty: React.FC<IList> = ({ title, list }) => {
+const RecommendLinks: React.FC<IList> = ({ title, list }) => {
   return (
     <div className="w-full pt-6">
       <p className="w-full font-medium py-1 px-3 bg-[#f5f5f5] rounded-md">
@@ -25,4 +25,4 @@ const RecommendProperty: React.FC<IList> = ({ title, list }) => {
   );
 };
 
-export default RecommendProperty;
+export default RecommendLinks;

@@ -1,7 +1,7 @@
 import { FaBell } from "react-icons/fa";
 import PropertyCard from "../components/Cards/Property";
 import driveTimeImg from "../assets/images/property/driveTime.png";
-import RecommendProperty from "../components/Cards/RecommendProperty";
+import RecommendProperty from "../components/Cards/RecommendLinks";
 import {
   recommendSearch,
   rentProperties,

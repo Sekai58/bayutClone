@@ -12,6 +12,7 @@ const FeaturedAgencies = () => {
     slidesToScroll: 1,
     cssEase: "linear",
     beforeChange: (current: any, next: any) => {
+      console.log(current);
       setCurrentSlide(next);
     },
     nextArrow: (

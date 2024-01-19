@@ -6,7 +6,9 @@ import Select from "react-select";
 const HeroSection = () => {
   const navigate = useNavigate();
   const [options, setOptions] = useState("property");
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
     navigate("/property");
   };
   return (
@@ -84,8 +86,9 @@ const HeroSection = () => {
             ></Select>
           </div>
           <button
+            type="submit"
             className="flex-[0.6] py-2 bg-green-400 rounded-md text-white"
-            onClick={() => handleSubmit()}
+            onClick={(e) => handleSubmit(e)}
           >
             Find
           </button>

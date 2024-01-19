@@ -52,9 +52,9 @@ const RealEstateSection = () => {
     ],
   };
   return (
-    <section className="px-24">
+    <section className="px-4 sm:px-10 xl:px-24">
       <header className="px-4">
-        <h2 className="w-full text-center font-semibold text-3xl py-5">
+        <h2 className="w-full text-center font-semibold text-xl md:text-3xl py-5">
           Discover more about the UAE real estate market
         </h2>
       </header>

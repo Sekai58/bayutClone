@@ -56,8 +56,8 @@ const Companies = () => {
   };
 
   return (
-    <section className="px-28 flex py-10">
-      <div className="w-[70%]">
+    <section className="px-4 sm:px-10 xl:px-28 flex py-10">
+      <div className="w-full md:w-[70%]">
         <div className="h-20">
           <h3 className="font-semibold text-lg">Featured Agencies (UAE) </h3>
           <p>
@@ -92,7 +92,8 @@ const Companies = () => {
         </section>
       </div>
 
-      <div className="min-w-[16rem] w-full  pt-20 pl-10 box-border">
+      {/* RIGHT SECTION */}
+      <div className="min-w-[16rem] w-full  pt-20 pl-10 box-border hidden md:block">
         <div className="border p-2 px-6 rounded-xl">
           <p className="font-semibold text-xl mb-2">
             How to select an Agent or Agency

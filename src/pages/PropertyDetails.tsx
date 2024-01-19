@@ -44,11 +44,11 @@ const PropertyDetails = () => {
         Bayut - SUP153304
       </header>
 
-      <div className="w-full flex px-28 gap-3">
+      <div className="flex flex-col md:flex-row px-4 sm:px-10 xl:px-28 gap-3 ">
         {/* LEFT SIDE */}
-        <section className=" leftSide flex-grow">
+        <section className=" leftSide overflow-x-hidden">
           {/* IMAGE */}
-          <div className="relative h-fit">
+          <div className="relative ">
             <img
               src={property}
               className="w-full h-[78vh] object-cover rounded-md"
@@ -73,8 +73,8 @@ const PropertyDetails = () => {
           {/* LINE CHART */}
           <LineChart />
 
-          <section className="flex py-5 mt-10 gap-8">
-            <div className="w-[24rem]">
+          <section className="flex flex-col xl:flex-row py-5 mt-10 gap-8 justify-between">
+            <div className="w-[20rem]">
               <BarChart />
             </div>
             <div className="">
@@ -98,8 +98,8 @@ const PropertyDetails = () => {
         </section>
 
         {/* RIGHT SIDE */}
-        <section className=" rightSide w-[24rem] ">
-          <div className="h-[78vh] flex flex-col gap-2">
+        <section className=" rightSide w-[400px]">
+          <div className="h-[78vh] hidden md:flex flex-col gap-2">
             <div className="h-[39vh] ">
               <img
                 src={propertydetail1}

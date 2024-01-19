@@ -6,7 +6,7 @@ const RegulatoryInfo = () => {
       <header>
         <h3 className="font-semibold text-2xl pb-5">Regulatory Information</h3>
       </header>
-      <div className="flex">
+      <div className="flex flex-col sm:flex-row">
         <table className="flex-1">
           <tr className="border-b">
             <td className="pr-6 py-2 flex items-center gap-3">
@@ -45,6 +45,7 @@ const RegulatoryInfo = () => {
             <td className="py-2">50034</td>
           </tr>
         </table>
+
         <div className="flex-1 flex flex-col items-center justify-center">
           <p>Trankheesi Permit</p>
           <img src="/qrcode.png" className="h-24 w-24" />

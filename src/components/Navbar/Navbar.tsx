@@ -18,21 +18,21 @@ const Navbar = () => {
         <TopSection />
 
         {/* BOTTOM SECTION */}
-        <section className="flex justify-between items-center py-5 px-28">
+        <section className="flex justify-between gap-3 items-center py-5 px-4 sm:px-10 xl:px-28">
           <Link to="/">
             <img src="/logo.png" className="w-[7rem]" />
           </Link>
 
           <div className="flex gap-4 items-center">
-            <Link to="/" className="w-[5rem]">
+            <Link to="#" className="w-[5rem]">
               <img src="/my_bayut.png" />
             </Link>
 
             <Link to="/companies">Find my Agent</Link>
 
-            <Link to="/">Flor Plans</Link>
+            <Link to="#">Flor Plans</Link>
 
-            <Link to="/" className="relative">
+            <Link to="#" className="relative ">
               <span onClick={() => dispatch(dropToggle("guides"))}>
                 Guides{drop == "guides" ? <>&#11205;</> : <>&#11206;</>}
               </span>
@@ -41,9 +41,9 @@ const Navbar = () => {
               </div>
             </Link>
 
-            <Link to="/" className="relative">
+            <Link to="#" className="relative whitespace-nowrap">
               <span onClick={() => dispatch(dropToggle("market"))}>
-                Marketing Intelligence{" "}
+                Marketing Intelligence
                 {drop == "market" ? <>&#11205;</> : <>&#11206;</>}
               </span>
               <div className="absolute top-[140%] right-0 w-[9rem]">
@@ -51,9 +51,9 @@ const Navbar = () => {
               </div>
             </Link>
 
-            <Link to="/">Agent Portal</Link>
+            <Link to="#">Agent Portal</Link>
 
-            <Link to="/" className="relative">
+            <Link to="#" className="relative">
               <span onClick={() => dispatch(dropToggle("events"))}>
                 Events {drop == "events" ? <>&#11205;</> : <>&#11206;</>}
               </span>

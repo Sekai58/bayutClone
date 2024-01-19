@@ -51,10 +51,7 @@ const HeroSection = () => {
         </button>
       </div>
 
-      <form
-        onSubmit={handleSubmit}
-        className="p-3 bg-[#232323] bg-opacity-90 rounded-md flex flex-col gap-1 w-[40rem]"
-      >
+      <form className="p-3 bg-[#232323] bg-opacity-90 rounded-md flex flex-col gap-1 w-[40rem]">
         <div className="flex justify-around gap-2 my-1">
           <Select className="flex-[0.6]" placeholder="Rent" isDisabled></Select>
           <input
@@ -86,7 +83,10 @@ const HeroSection = () => {
               isDisabled
             ></Select>
           </div>
-          <button className="flex-[0.6] py-2 bg-green-400 rounded-md text-white">
+          <button
+            className="flex-[0.6] py-2 bg-green-400 rounded-md text-white"
+            onClick={() => handleSubmit()}
+          >
             Find
           </button>
         </div>

@@ -17,10 +17,10 @@ const Footer = () => {
   };
   return (
     <>
-      <section className="w-full px-28 flex flex-col gap-4 bg-footer-section bg-contain py-8 justify-center">
-        <div className="flex justify-between">
+      <section className="w-full px-4 sm:-px-10 xl:px-28 flex flex-col gap-4 bg-footer-section bg-contain py-8 justify-center">
+        <div className="flex justify-between gap-8">
           <div className="uppercase text-white text-sm font-medium">
-            <ul className="flex gap-2 flex-wrap">
+            <ul className="hidden sm:flex gap-2 flex-wrap">
               <li className="hover:underline block">
                 <Link to="#">
                   About us <span className="ml-2">|</span>
@@ -42,29 +42,34 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-wrap gap-2 items-center">
-            <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-blue-500 text-xl rounded-full p-[6px]">
-              <FaFacebookF />
-            </p>
-            <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-black text-xl rounded-full p-[6px]">
-              <FaXTwitter />
-            </p>
-            <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-blue-500 text-xl rounded-full p-[6px]">
-              <BiLogoLinkedin />
-            </p>
-            <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-red-500 text-xl rounded-full p-[6px]">
-              <AiFillInstagram />
-            </p>
-            <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-red-500 text-xl rounded-full p-[6px]">
-              <GrYoutube />
-            </p>
-            <img src="/appStore.png" className="h-8 rounded-md" />
-            <img src="/googlePlay.png" className="h-8 rounded-md" />
-            <img src="/appGallery.png" className="h-8 rounded-md" />
+          <div className="flex flex-wrap gap-2 items-center justify-center sm:justify-end">
+            <div className="flex gap-2 justify-center">
+              <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-blue-500 text-xl rounded-full p-[6px]">
+                <FaFacebookF />
+              </p>
+              <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-black text-xl rounded-full p-[6px]">
+                <FaXTwitter />
+              </p>
+              <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-blue-500 text-xl rounded-full p-[6px]">
+                <BiLogoLinkedin />
+              </p>
+              <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-red-500 text-xl rounded-full p-[6px]">
+                <AiFillInstagram />
+              </p>
+              <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-red-500 text-xl rounded-full p-[6px]">
+                <GrYoutube />
+              </p>
+            </div>
+
+            <div className="flex gap-2 justify-center">
+              <img src="/appStore.png" className="h-8 rounded-md" />
+              <img src="/googlePlay.png" className="h-8 rounded-md" />
+              <img src="/appGallery.png" className="h-8 rounded-md" />
+            </div>
           </div>
         </div>
 
-        <div className="relative text-white w-fit font-medium">
+        <div className="relative text-white w-fit font-medium hidden sm:flex">
           COUNTRY:{" "}
           <button onClick={() => setCounterDrop(!countryDrop)}>
             United Arab Emirates {countryDrop ? <>&#11205;</> : <>&#11206;</>}
@@ -84,10 +89,10 @@ const Footer = () => {
           )}
         </div>
 
-        <div className="flex justify-between text-white">
+        <div className="flex justify-center sm:justify-between text-white">
           <p className="text-sm">&copy; 2008 - 2024 Bayut.com</p>
           <p
-            className="uppercase flex items-center text-sm cursor-pointer"
+            className="uppercase hidden sm:flex items-center text-sm cursor-pointer"
             onClick={() => {
               scrollToTop();
             }}

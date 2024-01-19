@@ -27,7 +27,7 @@ const TopSection = () => {
       {loginModelState ? <LoginModel /> : <></>}
 
       {/* LEFT SIDE OF TOPBAR */}
-      <section className="flex justify-between py-1 bg-[#f5f5f5] px-28 text-sm">
+      <section className="flex justify-between py-1 bg-[#f5f5f5] px-4 sm:px-10 xl:px-28 text-sm">
         <div className="flex gap-3 text-[#222]">
           <button
             className="relative py-1 px-6"

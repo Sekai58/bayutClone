@@ -58,13 +58,13 @@ const FeaturedAgencies = () => {
   };
 
   return (
-    <section className="px-28 py-10">
+    <section className="px-4 sm:px-10 xl:px-28 py-10">
       <header>
-        <h2 className="w-full text-center font-semibold text-3xl py-5">
+        <h2 className="w-full text-center font-semibold text-xl md:text-3xl py-5">
           Featured Agencies
         </h2>
       </header>
-      <Slider {...settings} className="px-20">
+      <Slider {...settings} className="px-10 md:px-20">
         {featAgencies.map((agency, idx) => {
           return (
             <div key={idx} className="flex justify-center">
@@ -77,7 +77,7 @@ const FeaturedAgencies = () => {
         })}
       </Slider>
 
-      <section className="flex justify-center py-6 text-xl text-medium">
+      <section className="flex justify-center py-6 text-md md:text-xl text-medium">
         {currentSlide != 4
           ? featAgencies[currentSlide + 1].content
           : featAgencies[0].content}

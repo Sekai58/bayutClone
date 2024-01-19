@@ -18,12 +18,12 @@ const Navbar = () => {
         <TopSection />
 
         {/* BOTTOM SECTION */}
-        <section className="flex justify-between gap-3 items-center py-5 px-4 sm:px-10 xl:px-28">
+        <section className="flex flex-col lg:flex-row justify-between gap-3 items-center py-5 px-4 sm:px-10 xl:px-28">
           <Link to="/">
             <img src="/logo.png" className="w-[7rem]" />
           </Link>
 
-          <div className="flex gap-4 items-center">
+          <div className="flex flex-col md:flex-row text-sm lg:text-base  gap-4 items-center">
             <Link to="#" className="w-[5rem]">
               <img src="/my_bayut.png" />
             </Link>

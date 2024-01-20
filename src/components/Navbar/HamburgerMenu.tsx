@@ -8,7 +8,8 @@ import {
 } from "../../redux/features/hamburgerSlice";
 
 const HambergerMenu = () => {
-  const data = localStorage.getItem("token");
+  //   const data = localStorage.getItem("token");
+  const data = true;
 
   const isOpened = useSelector((state: RootState) => {
     return state.hamburger.value;

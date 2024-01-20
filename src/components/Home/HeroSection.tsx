@@ -12,15 +12,15 @@ const HeroSection = () => {
     navigate("/property");
   };
   return (
-    <section className="h-[80vh] bg-cover mx-5 bg-hero-pattern rounded-lg flex flex-col justify-center items-center gap-7">
-      <header className="text-white">
+    <section className="h-[80vh] bg-cover mx-5 bg-hero-pattern rounded-lg flex flex-col justify-center items-center gap-7 overflow-hidden">
+      <header className="text-white hidden md:block">
         <h2 className="text-[2.5rem] font-semibold ">Real homes live here</h2>
         <h3 className="text-xl font-semibold">
           Real Prices. Real Photos. Real Properties
         </h3>
       </header>
 
-      <div className="p-2 bg-[#232323] bg-opacity-90 text-white rounded-md flex gap-1 items-center">
+      <div className="p-2 bg-[#232323] bg-opacity-90 text-white rounded-md hidden md:flex gap-1 items-center">
         <button
           className={`px-6 py-[6px] ${
             options === "property" ? "bg-white text-[#232323] rounded-md" : ""
@@ -53,7 +53,7 @@ const HeroSection = () => {
         </button>
       </div>
 
-      <form className="p-3 bg-[#232323] bg-opacity-90 rounded-md flex flex-col gap-1 w-[40rem]">
+      <form className="p-3 bg-[#232323] bg-opacity-90 rounded-md hidden md:flex flex-col gap-1 w-[40rem]">
         <div className="flex justify-around gap-2 my-1">
           <Select className="flex-[0.6]" placeholder="Rent" isDisabled></Select>
           <input
@@ -103,7 +103,7 @@ const HeroSection = () => {
         </div>
       </form>
 
-      <Link to="#">
+      <Link to="#" className="hidden md:block">
         <button className="py-2 pl-10 pr-4 relative border border-white text-white rounded-md">
           <span className="absolute top-2 left-3 text-2xl font-semibold">
             <FaRegPlayCircle />

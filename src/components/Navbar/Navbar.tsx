@@ -5,6 +5,7 @@ import { eventList, guideList, marketList } from "../../assets/data/navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { dropToggle } from "../../redux/features/topDropDownSlice";
 import { RootState } from "../../redux/store";
+import HambergerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -19,11 +20,16 @@ const Navbar = () => {
 
         {/* BOTTOM SECTION */}
         <section className="flex flex-col lg:flex-row justify-between gap-3 items-center py-5 px-4 sm:px-10 xl:px-28">
-          <Link to="/">
-            <img src="/logo.png" className="w-[7rem]" />
-          </Link>
+          <div className="flex w-full md:w-fit">
+            <button className="flex-1 md:hidden text-left">
+              <HambergerMenu />
+            </button>
+            <Link to="/" className="flex-1 text-center">
+              <img src="/logo.png" className="w-[7rem]" />
+            </Link>
+          </div>
 
-          <div className="flex flex-col md:flex-row text-sm lg:text-base  gap-4 items-center">
+          <div className="hidden md:flex flex-col md:flex-row text-sm lg:text-base  gap-4 items-center">
             <Link to="#" className="w-[5rem]">
               <img src="/my_bayut.png" />
             </Link>

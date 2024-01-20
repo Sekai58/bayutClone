@@ -62,9 +62,15 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-2 justify-center">
-              <img src="/appStore.png" className="h-8 rounded-md" />
+              <img
+                src="/appStore.png"
+                className="h-8 rounded-md hidden sm:block"
+              />
               <img src="/googlePlay.png" className="h-8 rounded-md" />
-              <img src="/appGallery.png" className="h-8 rounded-md" />
+              <img
+                src="/appGallery.png"
+                className="h-8 rounded-md hidden sm:block"
+              />
             </div>
           </div>
         </div>

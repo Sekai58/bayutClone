@@ -12,11 +12,13 @@ import { IoCameraOutline } from "react-icons/io5";
 import Profile from "../components/Cards/Profile";
 import SimilarProperty from "../components/Cards/SimilarProperty";
 import RecommendLinks from "../components/Cards/RecommendLinks";
-import { usefulLink } from "../assets/data/property";
+import { usefulLink, rentProperties } from "../assets/data/property";
 import LineChart from "../components/Charts/Line";
 import BarChart from "../components/Charts/Bar";
 import RegulatoryInfo from "../components/PropertyDetails/RegulatoryInfo";
 import PopularLocation from "../components/Cards/PopularLocation";
+import PropertyInfo from "../components/Cards/PropertyInfo";
+import PropertyDetail from "../components/Cards/PropertyDetail";
 
 const PropertyDetails = () => {
   return (
@@ -70,9 +72,21 @@ const PropertyDetails = () => {
               </button>
             </div>
           </div>
+
+          <PropertyDetail
+            price={rentProperties[0].price}
+            type={rentProperties[0].type}
+            bed={rentProperties[0].bed}
+            bath={rentProperties[0].bath}
+            area={rentProperties[0].area}
+            description={rentProperties[0].description}
+            location={rentProperties[0].location}
+          />
+
+          <PropertyInfo />
+          <h2 className="text-2xl font-semibold pt-8">Trends</h2>
           {/* LINE CHART */}
           <LineChart />
-
           <section className="flex flex-col xl:flex-row py-5 mt-10 gap-8 justify-between">
             <div className="w-[20rem]">
               <BarChart />
@@ -81,7 +95,6 @@ const PropertyDetails = () => {
               <PopularLocation />
             </div>
           </section>
-
           <p className="text-sm text-[#5f5f5f] mt-4">
             *These trends are calculated using a proprietary algorithm based on
             prices advertised on Bayut.
@@ -90,7 +103,6 @@ const PropertyDetails = () => {
             **Popularity is based on searches conducted by users on Bayut over
             the last quarter.
           </p>
-
           <hr />
           {/* REGULATORY INFO */}
           <RegulatoryInfo />

@@ -38,7 +38,7 @@ const LanguageModel: React.FC = () => {
           </p>
         </div>
 
-        <section className="flex gap-3 text-[10px] sm:text-[16px] w-[14rem] overflow-x-scroll no-scrollbar sm:w-full">
+        <section className="flex gap-3 text-[10px] sm:text-[16px] w-[16rem] overflow-x-scroll no-scrollbar sm:w-full">
           <button className="py-2 px-4 rounded-3xl border-[2px] border-[#bee7d3] bg-[#e9f7f0] text-[#28b16d] font-semibold whitespace-nowrap">
             English
           </button>

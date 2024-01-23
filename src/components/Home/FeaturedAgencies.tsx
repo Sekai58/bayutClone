@@ -38,27 +38,27 @@ const FeaturedAgencies = () => {
       </div>
     ),
 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //       initialSlide: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
   };
 
   return (
-    <section className="px-4 sm:px-10 xl:px-28 py-10">
+    <section className="px-4 sm:px-10 xl:px-28 py-10 hidden md:block">
       <header>
         <h2 className="w-full text-center font-semibold text-xl md:text-3xl py-5">
           Featured Agencies

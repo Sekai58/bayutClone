@@ -7,7 +7,7 @@ import { realEstate } from "../../assets/data/realestate";
 const RealEstateSection = () => {
   var settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     cssEase: "linear",
@@ -47,6 +47,7 @@ const RealEstateSection = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
@@ -58,7 +59,7 @@ const RealEstateSection = () => {
           Discover more about the UAE real estate market
         </h2>
       </header>
-      <Slider {...settings} className="px-4">
+      <Slider {...settings} className="sm:px-4">
         {realEstate.map((estate, idx) => {
           return (
             <div key={idx}>

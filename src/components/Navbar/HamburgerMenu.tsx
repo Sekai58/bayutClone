@@ -1,5 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux/store";
 import { motion } from "framer-motion";
@@ -20,20 +20,28 @@ const HambergerMenu = () => {
   });
 
   const dispatch = useDispatch();
+  const location = useLocation();
 
   return (
     <div className="flex md:hidden">
       {!isOpened ? (
         <header className="z-[999] flex justify-between w-full">
           <button
-            className="text-2xl text-white font-bold"
+            className={`text-2xl ${
+              location.pathname === "/" ? "text-white" : "text-black"
+            } font-bold`}
             onClick={() => dispatch(hamburgerToggle())}
           >
             <RxHamburgerMenu />
           </button>
-          <img src="/logo.png" className="w-[6rem]" />
+          <Link to="/">
+            <img src="/logo.png" className="w-[6rem]" />
+          </Link>
+
           <button
-            className="relative py-1 px-6 text-white"
+            className={`relative py-1 px-6 ${
+              location.pathname === "/" ? "" : "opacity-0 pointer-events-none"
+            }  text-white`}
             onClick={() => {
               dispatch(langOpen());
             }}
@@ -64,7 +72,7 @@ const HambergerMenu = () => {
                 }}
               />
             </div>
-            <button className="w-full py-1 text-center rounded-md bg-[#287064] text-white">
+            <button className="w-full py-2 text-center rounded-md bg-[#287064] text-white">
               Sign up or Log in
             </button>
             <div className="my-4">

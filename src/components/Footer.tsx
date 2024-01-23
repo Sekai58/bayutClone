@@ -17,7 +17,7 @@ const Footer = () => {
   };
   return (
     <>
-      <section className="w-full px-4 sm:-px-10 xl:px-28 flex flex-col gap-4 bg-footer-section bg-contain py-8 justify-center">
+      <section className="w-full px-4 sm:-px-10 xl:px-28 flex flex-col gap-4 bg-footer-section bg-contain py-8 justify-center ">
         <div className="flex justify-between gap-8">
           <div className="uppercase text-white text-sm font-medium">
             <ul className="hidden sm:flex gap-2 flex-wrap">

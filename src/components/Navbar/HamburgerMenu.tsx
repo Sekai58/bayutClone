@@ -23,26 +23,30 @@ const HambergerMenu = () => {
 
   return (
     <div className="flex md:hidden">
-      <header className="z-[999] flex justify-between w-full">
-        <button
-          className="text-2xl text-white font-bold"
-          onClick={() => dispatch(hamburgerToggle())}
-        >
-          <RxHamburgerMenu />
-        </button>
-        <img src="/logo.png" className="w-[6rem]" />
-        <button
-          className="relative py-1 px-6 text-white"
-          onClick={() => {
-            dispatch(langOpen());
-          }}
-        >
-          <span className="absolute top-2 left-0 ">
-            <GrLanguage />
-          </span>
-          EN
-        </button>
-      </header>
+      {!isOpened ? (
+        <header className="z-[999] flex justify-between w-full">
+          <button
+            className="text-2xl text-white font-bold"
+            onClick={() => dispatch(hamburgerToggle())}
+          >
+            <RxHamburgerMenu />
+          </button>
+          <img src="/logo.png" className="w-[6rem]" />
+          <button
+            className="relative py-1 px-6 text-white"
+            onClick={() => {
+              dispatch(langOpen());
+            }}
+          >
+            <span className="absolute top-2 left-0 ">
+              <GrLanguage />
+            </span>
+            EN
+          </button>
+        </header>
+      ) : (
+        <></>
+      )}
 
       {isOpened ? (
         <motion.div

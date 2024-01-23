@@ -13,7 +13,7 @@ const HeroSection = () => {
   };
   return (
     <section className="relative sm:mx-4">
-      <section className="-translate-y-[72px] md:translate-y-0 h-[75vh] bg-cover bg-hero-pattern sm:rounded-lg flex flex-col justify-center items-center gap-7 overflow-hidden">
+      <section className="-translate-y-[72px] md:translate-y-0 h-[80vh] bg-cover bg-hero-pattern sm:rounded-lg flex flex-col justify-center items-center gap-7 overflow-hidden">
         <header className="text-white hidden md:block">
           <h2 className="text-[2.5rem] font-semibold ">Real homes live here</h2>
           <h3 className="text-xl font-semibold">
@@ -117,13 +117,17 @@ const HeroSection = () => {
           </button>
         </Link>
       </section>
+
       <div className="absolute w-full bg-[#161616] md:hidden top-[80%] text-white p-4 flex flex-col items-center">
         <p className="text-lg font-medium ">Real homes live here</p>
         <p className="mb-2">Real Prices. Real Photos. Real Properties</p>
         <div className="flex gap-2 w-full">
-          <button className="flex-1 bg-green-400 py-1 px-2 rounded-md whitespace-nowrap">
-            Property Search
-          </button>
+          <Link to="/property" className="flex-1">
+            <button className="w-full bg-green-400 py-1 px-2 rounded-md whitespace-nowrap">
+              Property Search
+            </button>
+          </Link>
+
           <button className="flex-1 bg-green-400 py-1 px-2 rounded-md">
             Transactions
           </button>

@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Property = () => {
   return (
-    <section className="px-4 xl:px-28 flex flex-col lg:flex-row py-10">
+    <section className="px-4 xl:px-28 flex flex-col lg:flex-row pb-10">
       <div className=" flex-grow">
         <h3 className="text-2xl py-6">Properties for rent in UAE</h3>
         {rentProperties.map((property, idx) => {

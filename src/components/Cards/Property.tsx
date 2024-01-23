@@ -20,7 +20,10 @@ interface IProperty {
 const PropertyCard: React.FC<IProperty> = (props: IProperty) => {
   return (
     <div className="flex flex-col rounded-lg sm:flex-row border w-full mb-5">
-      <img className="w-[20rem]  object-cover rounded-l-lg" src={props.image} />
+      <img
+        className="w-full sm:w-[20rem]  object-cover rounded-tr-lg sm:rounded-tr-none rounded-l-lg"
+        src={props.image}
+      />
 
       <div className="p-4 flex flex-col gap-2 w-full">
         <h5 className=" text-md font-medium block ">

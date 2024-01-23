@@ -19,7 +19,7 @@ const ImageSection = () => {
   return (
     <section className="px-4 sm:px-10 lg:px-28">
       {/* TOP IMAGE SECTION */}
-      <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-10">
+      <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-16 sm:pt-10 pb-10">
         {topImages.map((data, idx) => {
           return (
             <div key={idx} className={`w-full h-[16rem] relative`}>

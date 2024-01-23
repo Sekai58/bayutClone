@@ -55,6 +55,7 @@ const Companies = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
+          centerMode: true,
         },
       },
     ],
@@ -153,7 +154,7 @@ const Companies = () => {
               <Slider {...settings}>
                 {cities.map((city, idx) => {
                   return (
-                    <div key={idx}>
+                    <div key={idx} className="p-3">
                       <City title={city.title} image={city.image} />
                     </div>
                   );

@@ -21,8 +21,8 @@ import PopularLocation from "../components/Cards/PopularLocation";
 const PropertyDetails = () => {
   return (
     <section className=" pb-10">
-      <hr />
-      <header className="flex gap-1 text-sm px-28 py-4">
+      <hr className="hidden md:block" />
+      <header className="hidden md:flex gap-1 text-sm px-28 py-4 flex-wrap">
         <Link to="/property">
           <button className="text-[#287064] mr-5">
             &#11164; Back to search
@@ -98,7 +98,7 @@ const PropertyDetails = () => {
         </section>
 
         {/* RIGHT SIDE */}
-        <section className=" rightSide w-[400px]">
+        <section className=" rightSide w-full md:w-[400px]">
           <div className="h-[78vh] hidden md:flex flex-col gap-2">
             <div className="h-[39vh] ">
               <img

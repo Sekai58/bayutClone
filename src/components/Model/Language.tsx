@@ -20,7 +20,7 @@ const LanguageModel: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className={` rounded-md border-[#494949] shadow-[#5e5e5e] shadow-md p-5 flex flex-col justify-between bg-white z-[999]`}
+        className={` rounded-md border-[#494949] shadow-[#5e5e5e] shadow-md p-5 flex flex-col justify-between bg-white z-[999] w-auto`}
       >
         <p className="w-full flex justify-end text-2xl translate-y-3 cursor-pointer">
           <span
@@ -33,36 +33,36 @@ const LanguageModel: React.FC = () => {
           </span>
         </p>
         <div className="flex w-full justify-center pb-6">
-          <p className="text-[20px] font-semibold">
+          <p className="text-[14px] sm:text-[20px] font-semibold">
             Select your prefered language
           </p>
         </div>
 
-        <section className="flex gap-3">
-          <button className="py-2 px-4 rounded-3xl border-[2px] border-[#bee7d3] bg-[#e9f7f0] text-[#28b16d] font-semibold">
+        <section className="flex gap-3 text-[10px] sm:text-[16px] w-[14rem] overflow-x-scroll no-scrollbar sm:w-full">
+          <button className="py-2 px-4 rounded-3xl border-[2px] border-[#bee7d3] bg-[#e9f7f0] text-[#28b16d] font-semibold whitespace-nowrap">
             English
           </button>
           <button
-            className="py-2 px-4 rounded-3xl border-[2px] border-[#bfc0c0] hover:bg-[#f1f1f1]"
+            className="py-2 px-4 rounded-3xl border-[2px] border-[#bfc0c0] hover:bg-[#f1f1f1] whitespace-nowrap"
             lang="zh-CN"
           >
             中文
           </button>
           <button
-            className="py-2 px-4 rounded-3xl border-[2px] border-[#bfc0c0] hover:bg-[#f1f1f1]"
+            className="py-2 px-4 rounded-3xl border-[2px] border-[#bfc0c0] hover:bg-[#f1f1f1] whitespace-nowrap"
             lang="ar"
           >
             عربي
           </button>
           <button
-            className="py-2 px-4 rounded-3xl border-[2px] border-[#bfc0c0] hover:bg-[#f1f1f1]"
+            className="py-2 px-4 rounded-3xl border-[2px] border-[#bfc0c0] hover:bg-[#f1f1f1] whitespace-nowrap"
             lang="ru"
           >
             Русский
           </button>
         </section>
 
-        <div className="flex justify-center pt-5">
+        <div className="flex justify-center pt-5 text-[10px] sm:text-[16px]">
           <button
             className={`flex-1 px-4 py-1 mr-2  border-2 text-white border-[#006169] bg-[#006169] hover:bg-[#006079] rounded-md`}
             onClick={() => {

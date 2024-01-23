@@ -20,11 +20,11 @@ const Navbar = () => {
 
         {/* BOTTOM SECTION */}
         <section className="flex flex-col lg:flex-row justify-between gap-3 items-center py-5 px-4 sm:px-10 xl:px-28">
-          <div className="flex w-full md:w-fit">
+          <div className="flex w-full md:w-fit justify-evenly">
             <button className="flex-1 md:hidden text-left">
               <HambergerMenu />
             </button>
-            <Link to="/" className="flex-1 text-center">
+            <Link to="/" className="flex-1 hidden md:block text-center">
               <img src="/logo.png" className="w-[7rem]" />
             </Link>
           </div>

@@ -11,6 +11,8 @@ import {
   hamburgerClose,
 } from "../../redux/features/hamburgerSlice";
 import Accordion from "./Accordion";
+import { langOpen } from "../../redux/features/languageModelSlice";
+import { GrLanguage } from "react-icons/gr";
 
 const HambergerMenu = () => {
   const isOpened = useSelector((state: RootState) => {
@@ -20,20 +22,34 @@ const HambergerMenu = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex md:hidden  text-md">
-      <button
-        className="text-3xl text-slate-700 font-bold"
-        onClick={() => dispatch(hamburgerToggle())}
-      >
-        <RxHamburgerMenu />
-      </button>
+    <div className="flex md:hidden">
+      <header className="z-[999] flex justify-between w-full">
+        <button
+          className="text-2xl text-white font-bold"
+          onClick={() => dispatch(hamburgerToggle())}
+        >
+          <RxHamburgerMenu />
+        </button>
+        <img src="/logo.png" className="w-[6rem]" />
+        <button
+          className="relative py-1 px-6 text-white"
+          onClick={() => {
+            dispatch(langOpen());
+          }}
+        >
+          <span className="absolute top-2 left-0 ">
+            <GrLanguage />
+          </span>
+          EN
+        </button>
+      </header>
 
       {isOpened ? (
         <motion.div
           initial={{ x: "-100%" }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5 }}
-          className="fixed top-0 right-0 w-[100%] z-10 bg-gray-50 border-[#d7d7d7] sm:top-16 h-screen sm:px-8"
+          className="fixed top-0 right-0 w-[100%] z-10 bg-gray-50 border-[#d7d7d7] md:top-16 h-screen sm:px-8 overflow-y-scroll no-scrollbar"
         >
           <header className="p-2">
             <div className="flex justify-between pt-2 pb-5 text-2xl">

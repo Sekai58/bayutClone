@@ -42,7 +42,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-wrap gap-2 items-center justify-center sm:justify-end">
+          <div className="flex flex-col items-center sm:flex-row flex-wrap gap-2 sm:justify-end  w-full sm:w-fit">
             <div className="flex gap-2 justify-center">
               <p className="text-[#4b4b4b] bg-[#8b8b8b] hover:text-white hover:bg-blue-500 text-xl rounded-full p-[6px]">
                 <FaFacebookF />
